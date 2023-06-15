@@ -8,7 +8,6 @@ def rename_file_extension(path):
 		directory_path = path + '/' + directory
 		files = os.listdir(directory_path)
 		for file in files:
-			print(directory_path + '/' + file)
 			if os.path.isdir(directory_path + '/' + file):
 				continue
 			name, extension = os.path.splitext(file)
